@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="mainAnchorPane" prefHeight="700.0" prefWidth="1366.0" xmlns:fx="http://javafx.com/fxml" fx:controller="quiz.StartpageController">
+  <children>
+    <ImageView fitHeight="853.75" fitWidth="1366.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@media/Wallpepers%20(257).jpg" preserveRatio="false" smooth="false" />
+      </image>
+    </ImageView>
+    <Group id="Group" fx:id="team_name_entry" layoutX="479.0" layoutY="170.0">
+      <children>
+        <TextField fx:id="textbox" layoutX="94.0" layoutY="226.0" onKeyPressed="#key_pressed" prefHeight="52.0" prefWidth="220.0" />
+        <Button fx:id="submit_button" layoutX="142.0" layoutY="306.0" mnemonicParsing="false" onAction="#submitAction" prefHeight="42.0" prefWidth="125.0" text="Submit">
+          <font>
+            <Font size="20.0" fx:id="x1" />
+          </font>
+        </Button>
+        <ImageView fitHeight="153.785506401062" fitWidth="467.0" layoutX="-18.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@media/screenshot-12.Png" preserveRatio="false" smooth="false" />
+          </image>
+        </ImageView>
+        <Text id="enterteam_name" fx:id="enter_team_name" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Your Team Name">
+          <font>
+            <Font size="40.0" fx:id="x2" />
+          </font>
+        </Text>
+        <ImageView fitHeight="133.495090567268" fitWidth="713.53515625" layoutX="-134.0" layoutY="-134.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@media/screenshot-9.Png" preserveRatio="false" smooth="false" />
+          </image>
+        </ImageView>
+      </children>
+    </Group>
+    <Group id="Group" fx:id="submitted_group" layoutX="561.0" layoutY="431.0" visible="false">
+      <children>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="57.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@media/cool.png" preserveRatio="false" smooth="false" />
+          </image>
+        </ImageView>
+        <Text font="$x1" layoutX="7.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wait till we bake your cake.." />
+      </children>
+    </Group>
+    <Button fx:id="db_tester" layoutX="656.0" layoutY="161.0" mnemonicParsing="false" onAction="#db_tester_action" text="Button" visible="false" />
+    <Group id="Group" fx:id="start_timer" layoutX="587.0" layoutY="297.0" visible="false">
+      <children>
+        <Text layoutX="-100.0" layoutY="-18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Starts in">
+          <font>
+            <Font size="60.0" fx:id="x4" />
+          </font>
+        </Text>
+        <Text fx:id="second" font="$x4" layoutX="55.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="05" />
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@media/happy-thumbs-up.png" preserveRatio="false" smooth="false" />
+          </image>
+        </ImageView>
+      </children>
+    </Group>
+    <Text fx:id="welcome_simple" layoutX="579.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" visible="false">
+      <font>
+        <Font size="50.0" fx:id="x3" />
+      </font>
+    </Text>
+    <Text fx:id="team_name_label" font="$x3" layoutX="433.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dummy Team Name" textAlignment="CENTER" visible="false" />
+  </children>
+</AnchorPane>

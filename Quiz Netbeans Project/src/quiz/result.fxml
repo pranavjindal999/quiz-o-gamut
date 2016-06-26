@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1366.0" xmlns:fx="http://javafx.com/fxml" fx:controller="quiz.ResultController">
+  <children>
+    <ImageView fitHeight="853.75" fitWidth="1366.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@media/Wallpepers%20(257).jpg" preserveRatio="false" smooth="false" />
+      </image>
+    </ImageView>
+    <Group id="Group" fx:id="table" layoutX="117.0" layoutY="171.0" visible="false">
+      <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="426.2744140625" opacity="0.36" stroke="#33e7ff" strokeType="INSIDE" strokeWidth="0.0" width="450.0" />
+        <Text layoutX="14.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Team ">
+          <font>
+            <Font size="30.0" fx:id="x1" />
+          </font>
+        </Text>
+        <Text font="$x1" layoutX="331.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score" />
+        <Line endX="347.0" layoutX="101.0" layoutY="62.0" startX="-100.0" />
+        <Line endX="-99.0" endY="407.0" layoutX="385.0" layoutY="18.0" startX="-100.0" startY="-17.0" />
+        <Text fx:id="t1" layoutX="14.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Team ">
+          <font>
+            <Font size="25.0" fx:id="x2" />
+          </font>
+        </Text>
+        <Text fx:id="t2" font="$x2" layoutX="14.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Team " />
+        <Text fx:id="t3" font="$x2" layoutX="14.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Team " />
+        <Text fx:id="t4" font="$x2" layoutX="14.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Team " />
+        <Text fx:id="t5" font="$x2" layoutX="14.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Team " />
+        <Text fx:id="t6" font="$x2" layoutX="14.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Team " />
+        <Text fx:id="t7" font="$x2" layoutX="14.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Team " />
+        <Text fx:id="t8" font="$x2" layoutX="14.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Team " />
+        <Text id="t1" fx:id="sc1" font="$x2" layoutX="354.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" />
+        <Text id="t1" fx:id="sc2" font="$x2" layoutX="354.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" />
+        <Text id="t1" fx:id="sc3" font="$x2" layoutX="354.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" />
+        <Text id="t1" fx:id="sc4" font="$x2" layoutX="354.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" />
+        <Text id="t1" fx:id="sc5" font="$x2" layoutX="354.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" />
+        <Text id="t1" fx:id="sc6" font="$x2" layoutX="354.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" />
+        <Text id="t1" fx:id="sc7" font="$x2" layoutX="354.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" />
+        <Text id="t1" fx:id="sc8" font="$x2" layoutX="354.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" />
+      </children>
+    </Group>
+    <Text layoutX="605.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Results">
+      <font>
+        <Font size="50.0" fx:id="x4" />
+      </font>
+    </Text>
+    <Group id="Group" fx:id="defeat" layoutX="817.0" layoutY="257.0" visible="false">
+      <children>
+        <Text layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sorry, You are Knocked out.">
+          <font>
+            <Font size="20.0" fx:id="x3" />
+          </font>
+        </Text>
+        <ImageView fitHeight="177.0" fitWidth="236.0" layoutX="75.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@media/okay-okay-clean.png" preserveRatio="false" smooth="false" />
+          </image>
+        </ImageView>
+      </children>
+    </Group>
+    <Group id="Group" fx:id="victory" layoutX="733.0" layoutY="285.0" visible="false">
+      <children>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="115.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@media/misc-all-the-things.png" preserveRatio="false" smooth="false" />
+          </image>
+        </ImageView>
+        <Text font="$x3" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pump up your Adrenaline, you are up for The Hunger Games..!!" />
+      </children>
+    </Group>
+    <Group id="Group" fx:id="tie_group" layoutX="743.0" layoutY="295.0" visible="false">
+      <children>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="115.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@media/disappointed-so-close-freddie-mercury.png" preserveRatio="false" smooth="false" />
+          </image>
+        </ImageView>
+        <Text font="$x3" layoutX="180.0" layoutY="-8.0" strokeType="OUTSIDE" strokeWidth="0.0" text="It's a Tie!!" />
+      </children>
+    </Group>
+    <Group id="Group" fx:id="wait_state" layoutX="343.0" layoutY="249.0">
+      <children>
+        <ProgressIndicator layoutX="235.0" prefHeight="186.0" prefWidth="209.8349609375" progress="-0.3" />
+        <Text font="$x4" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Waiting for others to complete" />
+      </children>
+    </Group>
+  </children>
+</AnchorPane>

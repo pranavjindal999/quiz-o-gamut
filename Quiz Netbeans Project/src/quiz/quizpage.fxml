@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1366.0" xmlns:fx="http://javafx.com/fxml" fx:controller="quiz.QuizpageController">
+  <children>
+    <ImageView fitHeight="853.1249390095254" fitWidth="1365.0" layoutX="1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@media/Wallpepers%20(257).jpg" preserveRatio="false" smooth="false" />
+      </image>
+    </ImageView>
+    <ProgressBar fx:id="timebar" layoutY="728.0" prefHeight="40.0" prefWidth="1366.0" progress="0.72">
+      <effect>
+        <ColorAdjust hue="-0.4732824427480915" />
+      </effect>
+    </ProgressBar>
+    <Button fx:id="op1" layoutX="130.0" layoutY="311.0" mnemonicParsing="false" onAction="#a_action" prefHeight="82.0" prefWidth="497.0" text="Option 1">
+      <font>
+        <Font size="30.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Button fx:id="op2" font="$x1" layoutX="130.0" layoutY="437.0" mnemonicParsing="false" onAction="#b_action" prefHeight="82.0" prefWidth="497.0" text="Option 2" />
+    <Button fx:id="op3" font="$x1" layoutX="683.0" layoutY="311.0" mnemonicParsing="false" onAction="#c_action" prefHeight="82.0" prefWidth="497.0" text="Option 3" />
+    <Button fx:id="op4" font="$x1" layoutX="683.0" layoutY="437.0" mnemonicParsing="false" onAction="#d_action" prefHeight="82.0" prefWidth="497.0" text="Option 4" />
+    <Text layoutX="530.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question">
+      <font>
+        <Font size="50.0" fx:id="x2" />
+      </font>
+    </Text>
+    <Text fx:id="qno" font="$x2" layoutX="756.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+    <Text fx:id="question" layoutX="89.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dummy Question text Dummy Question text Dummy Question text Dummy Question text Dummy Question text DQuestion text Dummy Question text Dummy Dummy Question text ?" wrappingWidth="1200.0">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Text>
+    <Button id="op4" fx:id="skip_button" cache="true" font="$x1" layoutX="769.0" layoutY="588.0" mnemonicParsing="false" onAction="#skip" prefHeight="82.0" prefWidth="335.0" text="Skip">
+      <effect>
+        <ColorAdjust hue="0.01526717557251911" saturation="0.5038167938931297" />
+      </effect>
+    </Button>
+    <Text font="$x2" layoutX="176.0" layoutY="657.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Score" />
+    <Text fx:id="score" font="$x2" layoutX="489.0" layoutY="659.0" strokeType="OUTSIDE" strokeWidth="0.0" text="000" />
+  </children>
+</AnchorPane>
